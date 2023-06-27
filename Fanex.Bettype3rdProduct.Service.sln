@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33502.453
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fanex.Bettype3rdProduct.Service", "Fanex.Bettype3rdProduct.Service\Fanex.Bettype3rdProduct.Service\Fanex.Bettype3rdProduct.Service.csproj", "{80F2A37B-8076-4620-AF03-CA5E2145EA0B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fanex.Bettype3rdProduct.Business", "Fanex.Bettype3rdProduct.Service\Fanex.Bettype3rdProduct.Business\Fanex.Bettype3rdProduct.Business.csproj", "{A8C1BFFB-5988-4DC4-90D6-57BF932EBAE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80F2A37B-8076-4620-AF03-CA5E2145EA0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80F2A37B-8076-4620-AF03-CA5E2145EA0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80F2A37B-8076-4620-AF03-CA5E2145EA0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80F2A37B-8076-4620-AF03-CA5E2145EA0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8C1BFFB-5988-4DC4-90D6-57BF932EBAE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8C1BFFB-5988-4DC4-90D6-57BF932EBAE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8C1BFFB-5988-4DC4-90D6-57BF932EBAE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8C1BFFB-5988-4DC4-90D6-57BF932EBAE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C3C03FE-0095-4BBB-9B79-5338AF6BEE13}
+	EndGlobalSection
+EndGlobal
