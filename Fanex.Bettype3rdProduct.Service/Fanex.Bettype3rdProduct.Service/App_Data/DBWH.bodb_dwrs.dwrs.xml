@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Functions>
+	<Function SiteId="25" SiteName="Auto Mail">
+		<Setting Key="DailyJob_CheckTasksStatus" SpName="DailyJob_CheckTasksStatus" DbName="DBWH.bodb_dwrs.dwrs" TimeOut="0" />
+		<Setting Key="Acc_Rpt_Automail_BettypeWithProducts" SpName="Acc_Rpt_Automail_BettypeWithProducts" DbName="DBWH.bodb_dwrs.dwrs" TimeOut="0" />
+		<Setting Key="Acc_Rpt_Automail_BettypeWithProducts_Juice" SpName="Acc_Rpt_Automail_BettypeWithProducts_Juice" DbName="DBWH.bodb_dwrs.dwrs" TimeOut="0" />
+	</Function>
+</Functions>
