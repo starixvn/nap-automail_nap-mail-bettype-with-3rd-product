@@ -6,7 +6,7 @@ COPY ./Fanex.Bettype3rdProduct.Service/Fanex.Bettype3rdProduct.Service/Fanex.Bet
 
 RUN ls /src -l
 WORKDIR /src/Fanex.Bettype3rdProduct.Service
-RUN dotnet nuget add source http://nuget.nexdev.net/api/v2
+RUN dotnet nuget add source https://nuget.nexdev.net/api/v2
 RUN dotnet restore -v n
 
 COPY ./Fanex.Bettype3rdProduct.Service/Fanex.Bettype3rdProduct.Service .
