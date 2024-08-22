@@ -138,7 +138,7 @@ public class ExcelServiceImp : ExcelService
     public string Save(ExcelPackage excelPackage, ExcelWorksheet dataTemplate)
     {
         excelPackage.Workbook.Worksheets.Delete(dataTemplate);
-        var folder = $@"{DateTime.Now:yyyy}/{DateTime.Now:MM}";
+        var folder = $@"{DateTime.Now:yyyyMMdd}";
         var root = $@"{AppConfigService.Config.Path}/{folder}";
         Directory.CreateDirectory(root);
 
