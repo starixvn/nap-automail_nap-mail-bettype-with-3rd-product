@@ -22,47 +22,14 @@ public static class ServiceCollectionExtensions
 {
     public static IServiceCollection Services { get; set; }
 
-    public static void LoadConfiguration(this IServiceCollection services)
+    public static void AddConfig(this IServiceCollection services)
     {
         Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory);
         var text = File.ReadAllText("appsettings.json");
         AppConfigService.Config = JsonConvert.DeserializeObject<ConfigSettingModel>(text);
     }
 
-    public static void SentryRegister(this IServiceCollection services)
-    {
-        var sentry = new SentryLogging(new SentryEngineOptions
-        {
-            Dsn = new Dsn(AppConfigService.Config.SentryClientKey)
-        });
-
-        LogManager
-            .SetDefaultLogCategory(AppConfigService.Config.CategorySentryLog)
-            .Use(new List<ILogEngine>
-            {
-                sentry
-            });
-    }
-
-    public static void FanexDataRegister(this IServiceCollection services, IConfiguration config)
-    {
-        var connections = config.GetSection("ConnectionStrings")
-            .GetChildren()
-            .AsEnumerable()
-            .ToDictionary
-            (
-                x => x.Key,
-                y => y.Value
-            );
-
-        DbSettingProviderManager
-            .StartNewSession()
-            .UseConnectionStrings(connections)
-            .UseDefaultDbSettingProvider(config.GetSection("StoredProcedurePath").Value)
-            .Run();
-    }
-
-    public static void InternalServiceRegister(this IServiceCollection services)
+    public static void AddInternalServices(this IServiceCollection services)
     {
         ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 
