@@ -57,7 +57,7 @@ public class RawDataSourceServiceImp : RawDataSourceService
 
     private DataSet QueryData(BettypeProductCriteria criteria)
     {
-        using var db = new ObjectDb(criteria.GetSettingKey(), 0);
+        using var db = ObjectDbFactory.CreateInstance(criteria.GetSettingKey(), 0);
         db.SetParameterValue("datestart", criteria.DateStart);
         db.SetParameterValue("dateend", criteria.DateEnd);
         db.SetParameterValue("statisticid", criteria.StatisticId);

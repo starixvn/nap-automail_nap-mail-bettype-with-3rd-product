@@ -1,7 +1,7 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
 	<PropertyGroup>
-		<TargetFramework>net7.0</TargetFramework>
+		<TargetFramework>net9.0</TargetFramework>
 		<UserSecretsId>ad974cd7-afb5-499a-a0a1-50eaa25eb29d</UserSecretsId>
 		<CopyRazorGenerateFilesToPublishDirectory>true</CopyRazorGenerateFilesToPublishDirectory>
 	</PropertyGroup>
@@ -14,7 +14,7 @@
   </ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.4" />
+		
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
 	</ItemGroup>
 
@@ -33,16 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="EPPlus" Version="5.7.1" />
-    <PackageReference Include="Fanex.Data" Version="3.0.0" />
-    <PackageReference Include="Fanex.Data.Repository" Version="3.0.0" />
-    <PackageReference Include="Fanex.Logging" Version="2.0.1" />
-    <PackageReference Include="Fanex.Logging.Extensions" Version="1.0.6" />
-    <PackageReference Include="Fanex.Logging.Extensions.Database" Version="1.0.6" />
-    <PackageReference Include="Fanex.Logging.Sentry.RavenClient" Version="1.0.1" />
-    <PackageReference Include="Fanex.MailStation" Version="2.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.6" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
